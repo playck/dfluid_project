@@ -38,9 +38,7 @@ const Main = () => {
           <Card key={key} card={cards[key]} />
         ))}
       </ul>
-      <div>
-        <ImageContainer />
-      </div>
+      <ImageContainer />
     </>
   );
 };
