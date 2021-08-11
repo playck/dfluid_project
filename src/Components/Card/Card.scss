@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100&family=Montserrat&family=Palette+Mosaic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100&display=swap");
+
+.card {
+  width: 493px;
+  height: 352px;
+  flex-grow: 0;
+  img {
+    width: 108px;
+    height: 108px;
+    margin-bottom: 40px;
+    object-fit: contain;
+  }
+
+  .label {
+    flex-grow: 0;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Montserrat;
+    line-height: 1.5;
+    letter-spacing: -0.36px;
+    text-align: left;
+    color: #000;
+  }
+
+  .text {
+    width: 100%;
+    flex-grow: 0;
+    margin: 24px 0;
+    font-family: Montserrat;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: -0.27px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.8);
+    word-break: break-word;
+  }
+
+  .more {
+    width: 100%;
+    flex-grow: 0;
+    margin: 24px 0 0;
+    font-family: Exo2;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.67;
+    letter-spacing: -0.27px;
+    text-align: left;
+    color: #18a0fb;
+    cursor: pointer;
+  }
+}
