@@ -4,6 +4,7 @@ import image2 from "../../image/image2.png";
 import image3 from "../../image/image3.png";
 import Card from "../../Components/Card/Card";
 import "./Main.scss";
+import ImageContainer from "../../Components/ImageContainer/ImageContainer";
 
 const Main = () => {
   const [cards, setCards] = useState({
@@ -37,6 +38,9 @@ const Main = () => {
           <Card key={key} card={cards[key]} />
         ))}
       </ul>
+      <div>
+        <ImageContainer />
+      </div>
     </>
   );
 };

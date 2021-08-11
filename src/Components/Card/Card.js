@@ -7,7 +7,7 @@ const Card = ({ card }) => {
       <img src={card.img} alt="프로필 사진" />
       <div className="label">{card.label}</div>
       <div className="text">{card.text}</div>
-      <span class="more">Learn more</span>
+      <span className="more">Learn more</span>
     </li>
   );
 };
