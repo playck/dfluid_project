@@ -21,3 +21,9 @@
   margin: 70px 80px 110px;
   padding: 0;
 }
+
+@media screen and (max-width: 425px) {
+  .cardList {
+    flex-direction: column;
+  }
+}
