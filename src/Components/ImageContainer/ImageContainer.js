@@ -5,17 +5,17 @@ import Rectangle from "../../image/Rectangle.png";
 
 const ImageContainer = () => {
   const [img, setImg] = useState(null);
-  const previousImg = localStorage.getItem("img");
+  const previousImg = sessionStorage.getItem("img");
 
   useEffect(() => {
-    if (localStorage.getItem("img") === null) {
+    if (sessionStorage.getItem("img") === null) {
       axios
         .get(
           "https://api.unsplash.com/photos/random?client_id=RfZSbn_rdvEPrnhslq8HRwmCwyayZg3DBo_LDcXXaTM"
         )
         .then(function (res) {
           setImg(res.data.urls.raw);
-          localStorage.setItem("img", res.data.urls.raw);
+          sessionStorage.setItem("img", res.data.urls.raw);
         });
     }
   }, []);
